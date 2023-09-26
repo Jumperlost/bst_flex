@@ -1,0 +1,66 @@
+// header
+
+.nav,
+.nav--main {
+  @include flex(row, center, center);
+  background: $primary-color;
+}
+
+.header {
+  background-color: $main-color;
+  .menu {
+    display: flex;
+    .menu__item {
+      padding: 17px 15px 16px;
+    }
+  }
+}
+
+.nav--main {
+  border-top: 1px solid $primary-color;
+  background-color: $main-color;
+  .menu__item {
+    padding: 30px 1.5%;
+    .menu__link:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// sides
+
+.sides,
+.flex-center {
+  @include flex(row, space-between, center);
+  padding: 15px;
+  background-color: $main-color;
+  .logo {
+    margin-left: 5%;
+    gap: 20px;
+  }
+  .logo-name {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+  .call {
+    gap: 40px;
+  }
+  .call__btn {
+    border-color: #f13c6e;
+    background-color: $main-color;
+  }
+}
+
+.call__link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.flex__center {
+  margin-right: 5%;
+}
